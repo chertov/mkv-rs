@@ -1,0 +1,54 @@
+[package]
+name = "mkv"
+version = "0.1.0"
+authors = ["chertov <chertovmv@gmail.com>"]
+edition = "2021"
+
+[[example]]
+name = "dump"
+path = "examples/dump.rs"
+[[example]]
+name = "dump_blocking"
+path = "examples/dump_blocking.rs"
+[[example]]
+name = "remux"
+path = "examples/remux.rs"
+[[example]]
+name = "remux_blocking"
+path = "examples/remux_blocking.rs"
+
+[lib]
+path = "src/lib.rs"
+
+
+[dependencies]
+anyhow = "1"
+thiserror = "1"
+
+log = "0.4"
+
+chrono = "0.4"
+rand = "0.8"
+
+byteorder = "1"
+
+futures = "0.3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "io-util", "fs"] }
+
+hexf = "0.2.1"
+time = { version = "0.3", features = ["macros"] }
+
+async-trait = "0.1"
+async-recursion = "1"
+
+async_blocking = { path = "../async_blocking" }
+
+
+[dev-dependencies]
+anyhow = "1"
+env_logger = "0.10"
+
+[build-dependencies]
+anyhow = "1"
+
+mkv_codegen = { path = "../mkv_codegen" }

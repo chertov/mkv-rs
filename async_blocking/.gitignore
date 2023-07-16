@@ -1,0 +1,10 @@
+*
+!*/
+
+!/src/**/*.rs
+!/build.rs
+!/Cargo.toml
+
+!/**/.gitignore
+
+/**/.idea

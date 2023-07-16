@@ -1,0 +1,9 @@
+[package]
+name = "async_blocking"
+version = "0.1.0"
+authors = ["chertov <chertovmv@gmail.com>"]
+edition = "2021"
+
+[lib]
+proc-macro = true
+path = "src/lib.rs"

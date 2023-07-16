@@ -1,0 +1,14 @@
+*
+!*/
+
+!/src/**/*.rs
+!/examples/**/*.rs
+!/build.rs
+!/Cargo.toml
+!/**/*.md
+!/**/*.xml
+
+!/**/.gitignore
+
+
+/**/.idea

@@ -1,0 +1,10 @@
+*
+!*/
+!/Cargo.toml
+!/**/*.md
+
+!/movies/**/*.mkv
+
+!/**/.gitignore
+
+/**/.idea

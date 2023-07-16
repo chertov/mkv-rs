@@ -1,0 +1,20 @@
+[package]
+name = "mkv_codegen"
+version = "0.1.0"
+authors = ["chertov <chertovmv@gmail.com>"]
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+anyhow = "1"
+
+log = "0.4"
+env_logger = "0.10.0"
+
+serde = "1"
+serde_derive = "1"
+serde-xml-rs = "0.6"
+
+convert_case = "0.6"

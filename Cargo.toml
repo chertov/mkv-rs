@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "mkv_codegen",
+    "mkv",
+    "async_blocking",
+]
